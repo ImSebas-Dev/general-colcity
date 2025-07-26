@@ -1,1 +1,1 @@
-# general-colcity
+Normativa general de ColCity RP.
