@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normativas COLCITY RP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+        }
+        
+        .gradient-header {
+            background: linear-gradient(90deg, #d53f8c 0%, #805ad5 50%, #4c51bf 100%);
+        }
+        
+        .rule-card {
+            background: rgba(26, 32, 44, 0.8);
+            backdrop-filter: blur(10px);
+            border-left: 4px solid #d53f8c;
+            transition: all 0.3s ease;
+        }
+        
+        .rule-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(213, 63, 140, 0.3);
+        }
+        
+        .section-title {
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #d53f8c 0%, #805ad5 100%);
+        }
+        
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1a1a2e;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(#d53f8c, #805ad5);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header -->
+        <header class="gradient-header rounded-xl shadow-lg mb-10 overflow-hidden">
+            <div class="flex flex-col md:flex-row items-center justify-between p-6 md:p-8">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-gavel text-3xl mr-4 text-white"></i>
+                    <h1 class="text-2xl md:text-3xl font-bold text-white">COLCITY RP</h1>
+                </div>
+                <div class="bg-black bg-opacity-30 px-4 py-2 rounded-full">
+                    <p class="text-sm md:text-base font-medium text-white">Normativas del Servidor</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Search and Filter -->
+        <div class="mb-10">
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="relative flex-grow">
+                    <input type="text" placeholder="Buscar normativa..." class="w-full bg-gray-900 bg-opacity-70 border border-gray-700 rounded-lg py-3 px-4 pl-12 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white">
+                    <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+                <select class="bg-gray-900 bg-opacity-70 border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white">
+                    <option>Todas las categorías</option>
+                    <option>General</option>
+                    <option>Roleplay</option>
+                    <option>Staff</option>
+                    <option>Comunidad</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Rules Sections -->
+        <div class="space-y-12">
+            <!-- General Rules -->
+            <section>
+                <h2 class="section-title text-2xl font-bold mb-6">Normas Generales</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-pink-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-ban text-pink-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Prohibido el Metagaming</h3>
+                        </div>
+                        <p class="text-gray-300">No utilices información obtenida fuera del juego (OOC) para beneficiarte dentro del roleplay (IC). Esto incluye streams, chats de voz o cualquier información que tu personaje no debería saber.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-purple-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-microphone-slash text-purple-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">No Powergaming</h3>
+                        </div>
+                        <p class="text-gray-300">No forces acciones sobre otros jugadores sin darles oportunidad de reaccionar. Todo debe ser consensuado y seguir las mecánicas del juego. Ejemplo: "Te disparo en la cabeza" sin dar tiempo a respuesta.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-indigo-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-comment-slash text-indigo-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Lenguaje Apropiado</h3>
+                        </div>
+                        <p class="text-gray-300">Mantén un lenguaje respetuoso tanto en el chat de voz como en el texto. No se tolerarán insultos racistas, homofóbicos o cualquier tipo de discriminación. El español es el idioma principal del servidor.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-pink-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-ghost text-pink-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">No FailRP</h3>
+                        </div>
+                        <p class="text-gray-300">Todas tus acciones deben ser realistas y acordes a tu personaje. No hagas cosas que rompan la inmersión del roleplay como saltar de un vehículo en movimiento sin consecuencias o revivir mágicamente.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Roleplay Rules -->
+            <section>
+                <h2 class="section-title text-2xl font-bold mb-6">Normas de Roleplay</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-purple-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-life-ring text-purple-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Regla de Nueva Vida (NLR)</h3>
+                        </div>
+                        <p class="text-gray-300">Al morir, tu personaje pierde toda memoria del evento que causó su muerte. No puedes volver al lugar del incidente durante al menos 15 minutos ni buscar venganza por esa situación específica.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-indigo-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-fist-raised text-indigo-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">FearRP</h3>
+                        </div>
+                        <p class="text-gray-300">Debes actuar con miedo cuando tu vida esté en peligro. Si alguien te apunta con un arma, no puedes ignorar la amenaza. El valor de la vida de tu personaje debe ser primordial en tus decisiones.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-pink-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-car-crash text-pink-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Roleplay de Robo</h3>
+                        </div>
+                        <p class="text-gray-300">Los robos deben tener una razón IC válida y desarrollarse adecuadamente. No puedes robar a alguien sin interacción previa. Los robos express (menos de 2 minutos) están prohibidos.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-purple-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-bullseye text-purple-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Combat Logging</h3>
+                        </div>
+                        <p class="text-gray-300">Está prohibido desconectarse durante situaciones de roleplay activo, especialmente durante robos, peleas o persecuciones. Si debes irte, avisa con tiempo o acepta las consecuencias IC.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Staff Rules -->
+            <section>
+                <h2 class="section-title text-2xl font-bold mb-6">Normas del Staff</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-indigo-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-user-shield text-indigo-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Abuso de Poder</h3>
+                        </div>
+                        <p class="text-gray-300">El staff debe actuar con imparcialidad y profesionalismo en todo momento. No pueden beneficiarse de su posición para obtener ventajas IC o OOC. Cualquier abuso será sancionado severamente.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-pink-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-headset text-pink-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Reportes</h3>
+                        </div>
+                        <p class="text-gray-300">Los reportes deben hacerse a través del sistema de tickets con pruebas (vídeo o capturas). El staff no atenderá reportes por voz o mensajes privados. Sé específico y proporciona toda la información necesaria.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-purple-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-gavel text-purple-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Decisiones del Staff</h3>
+                        </div>
+                        <p class="text-gray-300">Las decisiones del staff son inapelables en el momento. Si no estás de acuerdo, puedes apelar en el foro con pruebas adicionales. Discutir o faltar al respeto al staff resultará en sanción.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-indigo-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-user-secret text-indigo-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Confidencialidad</h3>
+                        </div>
+                        <p class="text-gray-300">El staff tiene acceso a información confidencial que no puede ser compartida con otros jugadores. Revelar información interna resultará en la inmediata expulsión del equipo de staff.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Rules -->
+            <section>
+                <h2 class="section-title text-2xl font-bold mb-6">Normas de Comunidad</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-pink-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-heart text-pink-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Respeto Mutuo</h3>
+                        </div>
+                        <p class="text-gray-300">COLCITY RP valora la diversidad y el respeto. No toleramos acoso, discriminación o comportamientos tóxicos. Todos tienen derecho a disfrutar del servidor en un ambiente sano y amigable.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-purple-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-users text-purple-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Facciones Oficiales</h3>
+                        </div>
+                        <p class="text-gray-300">Las facciones oficiales (Policía, EMS, Bandas) tienen normas adicionales. Los líderes de facción son responsables de mantener el orden interno y reportar problemas al staff cuando sea necesario.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-indigo-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-car text-indigo-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Uso de Vehículos</h3>
+                        </div>
+                        <p class="text-gray-300">Los vehículos deben usarse de forma realista. No se permite el rampage (atropellar personas intencionalmente) ni conducción temeraria en zonas con mucha población. Respeta los semáforos y normas de tráfico.</p>
+                    </div>
+                    
+                    <div class="rule-card rounded-lg p-6 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-pink-600 bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-exclamation-triangle text-pink-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Sanciones</h3>
+                        </div>
+                        <p class="text-gray-300">Las infracciones serán sancionadas según su gravedad con: advertencia, kick, ban temporal o ban permanente. Las sanciones son acumulativas. Reincidir en la misma falta resultará en castigos más severos.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-16 pt-8 border-t border-gray-800">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold text-white">COLCITY RP</h3>
+                    <p class="text-gray-400">Servidor de Roleplay en FiveM</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-pink-400 transition"><i class="fab fa-discord text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition"><i class="fab fa-twitter text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition"><i class="fab fa-youtube text-2xl"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 COLCITY RP. Todos los derechos reservados.</p>
+                <p class="mt-2">Las normas están sujetas a cambios. Revisa periódicamente para estar al día.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Simple search functionality
+        document.querySelector('input[type="text"]').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const ruleCards = document.querySelectorAll('.rule-card');
+            
+            ruleCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const content = card.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Category filter
+        document.querySelector('select').addEventListener('change', function(e) {
+            const category = e.target.value;
+            const sections = document.querySelectorAll('section');
+            
+            if (category === 'Todas las categorías') {
+                sections.forEach(section => section.style.display = 'block');
+                return;
+            }
+            
+            sections.forEach(section => {
+                const title = section.querySelector('h2').textContent;
+                if (title.includes(category)) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
